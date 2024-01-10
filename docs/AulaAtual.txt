@@ -1,1 +1,1 @@
-https://app.rocketseat.com.br/classroom/integrando-frontend-backend/group/paginas-e-componentes-ui/lesson/filtros-dos-pedidos
+https://app.rocketseat.com.br/classroom/integrando-frontend-backend/group/paginas-e-componentes-ui/lesson/modal-detalhes-do-pedido
