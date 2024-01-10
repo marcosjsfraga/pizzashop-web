@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Search, Trash2 } from "lucide-react";
 import { TableCell, TableRow } from "@/components/ui/table";
+import { Dialog, DialogTrigger } from "@/components/ui/dialog";
+import OrderDetails from "./order-details";
 
 // export interface Props {}
 
@@ -8,10 +10,15 @@ export default function OrderTableRow() {
   return (
     <TableRow>
       <TableCell>
-        <Button variant="outline" size="xs">
-          <Search className="h-3 w-3 " />
-          <span className="sr-only">Detalhes pedido</span>
-        </Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button variant="outline" size="xs">
+              <Search className="h-3 w-3 " />
+              <span className="sr-only">Detalhes pedido</span>
+            </Button>
+          </DialogTrigger>
+          <OrderDetails />
+        </Dialog>
       </TableCell>
       <TableCell className="font-medium">13707</TableCell>
       <TableCell className="font-medium">15 dias</TableCell>
